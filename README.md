@@ -28,11 +28,11 @@ Then, I created a pivot table so see the following data summarized: *Parent Cate
 
 The following Pivot table was used to create a chart to show Louise that campaigns launched in certain months had a more successful rate. 
 
-```**_insert pivot chart image_**```
+![image_name](Resources/Pivot_Chart_Theater_Outcomes.png)
 
 To show Louise the outcomes based on goals I created a new sheet where I added different columns to show the goal amount, the total number of projects and their outcomes and finally the respective percentage of each outcome. This is the structure of the table I created. 
 
-```**_insert table image_**```
+![image_name](Resources/Outcome_Based_on_Goals_Table.png)
 
 To know how many crowdfunding campaigns were successful in the subcategory of "plays" I used the following formula: 
 
@@ -44,14 +44,14 @@ I adjusted the formula to match the goals for each row and column. To show the p
 
 I used this table to create a chart to show Louise that the goal amount was one of the key factors to a campaign success. This data gave us the following chart. 
 
-```**_insert chart outcomes based on Goal image_**```
+![image_name](/Resources/Outcomes_Based_on_Goal.png)
 
 One of the challenges I encountered with this analysis is that my first chart looked different than what was provided in the challenge instructions. It took me some time to realize that in cells number B13 and C13 I had missed a “0” in my formula and the number was 5000 instead of 50,000.
 
 ***Wrong formula:***
 ```=COUNTIFS(Kickstarter!$D:$D,">=5000",Kickstarter!$F:$F,"successful",Kickstarter!$R:$R,"plays")```
 
-```**_insert chart wrong outcomes  image_**```
+![image_name](/Resources/Wrong_Outcomes.png)
 
 ## Conclusions
 
@@ -59,14 +59,14 @@ Some conclusions we can draw from the Pivot chart created to display the Theater
 
 We can observe this in the following chart as well. 
 
-```**_insert Theater outcomes based on launch dates image_**```
+![image_name](/Resources/Theater_Outcomes_Based_on_Launch_Date.png)
 
 Also, looking at the Outcomes Based on Goals table and chart, we see that projects that show a successful rate have goals between $1000 and $14,999. However, projects that have goals of less than $5000, have approximately 73% to 76% rate of success.  This finding was also consistent with a statistical analysis applied to all the successful crowdfunding campaigns that had a Mean Goal of $5,049. 
 To find the Mean of successful crowdfunding campaigns I used this formula:
 
 ```=AVERAGE('Successful US Kickstarter'!D:D)```
 
-```**_insert chart outcomes based on Goal image_**```
+![image_name](/Resources/Outcomes_Based_on_Goal.png)
 
 Since Louise had estimated that her costs were going to be around $12,000 this finding could have been somewhat discouraging for her. However, we also observe that there is a 54% rate of success of projects with goals between 10,000 to 14,999. We could analyze further to see which are the contributing factors to the crowdfunding success of these types of projects. For instance, we could create a pivot chart that show projects with goals between 10,000 to 14,999 combined with other data such as *launch date* or *backers* so we can identify the key factors that were important to those campaigns'success. 
 
