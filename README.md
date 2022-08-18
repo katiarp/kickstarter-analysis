@@ -1,10 +1,10 @@
 # kickstarter-analysis
 ## Project Overview  
-The purpose of this project is to analyze crowdfunding data to uncover patterns of successful crowdfundings. Louise, a playwright wanted to fund her play called “Fever.” I gave her a detailed analysis of other crowdfunding projects focusing especially on theater projects. The dataset contained information of other types of projects from other industries such as publishing, technology, music, television, etc. I used this data to show how they compared to the theater crowdfunding projects. 
+The purpose of this project is to analyze crowdfunding data to uncover patterns of successful crowdfundings. Louise, a playwright wanted to fund her play called **“Fever.”** I gave her a detailed analysis of other crowdfunding projects focusing especially on theater projects. The dataset contained information of other types of projects from other industries such as publishing, technology, music, television, etc. I used this data to show how they compared to the theater crowdfunding projects. 
 
-Louise came near to her fundraising goal but wanted to understand better how other campaigns performed in relation to their launch date and funding goals. I delivered a “Theater Outcomes Based on Launch Date” and “Outcomes Based on Goals” charts to show Louise the information she was looking for, so she could improve her efforts to fund her future projects. 
+Louise came near to her fundraising goal but wanted to understand better how other campaigns performed in relation to their launch date and funding goals. I delivered a *“Theater Outcomes Based on Launch Date”* and *“Outcomes Based on Goals”* charts to show Louise the information she was looking for, so she could improve her efforts to fund her future projects. 
 ## Analysis and Challenges
-The analysis was performed using the dataset called StarterBook.xlsx, I performed different analysis using this data. For instance, I started by applying conditional formatting to a specific column to color-code the outcomes to visualize them better. I also created a column to show how much of each project’s goal was met showing the percentage funded; this was done using the following formula:
+The analysis was performed using the dataset called StarterBook.xlsx. I started by applying conditional formatting to a specific column to color-code the outcomes to visualize them better. I also created a column to show how much of each project’s goal was met showing the percentage funded. I used the following formula to obtain the percentage:
 
 ```=ROUND(E2/D2*100,0)```
 
@@ -14,7 +14,7 @@ I also created an Average Donation Column and used the formula:
 
 *Note: The “2” after the coma indicates that we want two digits after the decimal.*
 
-When applying this formula, I encountered the following error **_#DIV/0!_** that indicates that numbers are not divisible by 0.  I corrected the error by applying the following nested formula:
+When applying this formula, I encountered the following error **_#DIV/0!_** that indicates that numbers are not divisible by "0".  I corrected the error by applying the following nested formula:
 
 ```=IFERROR(ROUND(E4/L4,2),0)```
 
@@ -42,9 +42,7 @@ I adjusted the formula to match the goals for each row and column. To show the p
 
 ```=(B2/E2)```
 
-I used this table to create a chart to show Louise that the goal amount was one of the key factors to a campaign success. This data gave us the following chart. 
-
-![image_name](/Resources/Outcomes_Based_on_Goal.png)
+I used this table to create a chart to show Louise that the goal amount was one of the key factors to a campaign success. 
 
 One of the challenges I encountered with this analysis is that my first chart looked different than what was provided in the challenge instructions. It took me some time to realize that in cells number B13 and C13 I had missed a “0” in my formula and the number was 5000 instead of 50,000.
 
@@ -55,7 +53,7 @@ One of the challenges I encountered with this analysis is that my first chart lo
 
 ## Conclusions
 
-Some conclusions we can draw from the Pivot chart created to display the Theater Outcomes by Launch Date are that the crowdfunding campaigns launched during the months of May, June and July had more successful outcomes than failed outcomes. For instance, in the month of May, 67% of crowdfunding campaigns were successful while only 31% failed. However, campaigns launched in October showed 43% of failed outcomes. We advised Louise that the best months to launch a crowdfunding campaign are the month of May and summer months.
+Some conclusions we can draw from the pivot chart created to display the Theater Outcomes by Launch Date are that the crowdfunding campaigns launched during the months of May, June and July had more successful outcomes than failed outcomes. For instance, in the month of May, 67% of crowdfunding campaigns were successful while only 31% failed. However, campaigns launched in October showed 43% of failed outcomes. We advised Louise that the best months to launch a crowdfunding campaign are the month of May and summer months.
 
 In the following chart, we  observe this by looking at the big spike in successful campaings in the month of May.
 
