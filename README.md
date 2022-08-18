@@ -55,18 +55,16 @@ One of the challenges I encountered with this analysis is that my first chart lo
 
 ## Conclusions
 
-Some conclusions we can draw from the Pivot chart created to display the Theater Outcomes by Launch Date are that the crowdfunding campaigns launched during the months of May, June and July had more successful outcomes than failed outcomes. For instance, in the month of May, 67% of crowdfunding campaigns were successful while only 31% failed. However, campaigns launched in October showed 43% of failed outcomes. We advised Louise that the best months to launch a crowdfunding campaign are the summer months.
+Some conclusions we can draw from the Pivot chart created to display the Theater Outcomes by Launch Date are that the crowdfunding campaigns launched during the months of May, June and July had more successful outcomes than failed outcomes. For instance, in the month of May, 67% of crowdfunding campaigns were successful while only 31% failed. However, campaigns launched in October showed 43% of failed outcomes. We advised Louise that the best months to launch a crowdfunding campaign are the month of May and summer months.
 
-We can observe this in the following chart as well. 
+In the following chart, we  observe this by looking at the big spike in successful campaings in the month of May.
 
 ![image_name](/Resources/Theater_Outcomes_Based_on_Launch_Date.png)
 
 Also, looking at the Outcomes Based on Goals table and chart, we see that projects that show a successful rate have goals between $1000 and $14,999. However, projects that have goals of less than $5000, have approximately 73% to 76% rate of success.  This finding was also consistent with a statistical analysis applied to all the successful crowdfunding campaigns that had a Mean Goal of $5,049. 
-To find the Mean of successful crowdfunding campaigns I used this formula:
-
-```=AVERAGE('Successful US Kickstarter'!D:D)```
+To find the Mean of successful crowdfunding campaigns I used this formula: ```=AVERAGE('Successful US Kickstarter'!D:D)```
 
 ![image_name](/Resources/Outcomes_Based_on_Goal.png)
 
-Since Louise had estimated that her costs were going to be around $12,000 this finding could have been somewhat discouraging for her. However, we also observe that there is a 54% rate of success of projects with goals between 10,000 to 14,999. We could analyze further to see which are the contributing factors to the crowdfunding success of these types of projects. For instance, we could create a pivot chart that show projects with goals between 10,000 to 14,999 combined with other data such as *launch date* or *backers* so we can identify the key factors that were important to those campaigns'success. 
+Since Louise had estimated that her costs were going to be around $12,000 this finding could have been somewhat discouraging for her. However, we also observe that there is a 54% rate of success of projects with goals between 10,000 to 14,999. We could analyze further to see which are the contributing factors to the crowdfunding success of these types of projects. For instance, we could create a pivot chart that show projects with goals between 10,000 to 14,999 combined with other data such as *launch date* or *backers* so we can identify the key factors that contributed to those campaigns'success. 
 
